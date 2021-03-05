@@ -1,5 +1,7 @@
+import { Button, IconButton, makeStyles, TextField } from '@material-ui/core';
+
 import CasinoIcon from '@material-ui/icons/Casino';
-import { IconButton, makeStyles } from '@material-ui/core';
+import AddBoxIcon from '@material-ui/icons/AddBox';
 
 const useStyles = makeStyles(() => {
   return {
@@ -14,9 +16,16 @@ function App() {
 
   return (
     <div className={classes.container}>
+      <TextField id="gameName" label="Game" variant="outlined" />
       <IconButton>
-        <CasinoIcon />
+        <AddBoxIcon />
       </IconButton>
+
+      <br />
+      <br />
+      <Button variant="contained" startIcon={<CasinoIcon />} endIcon={<CasinoIcon />} size="large">
+        Pick for me!
+      </Button>
     </div>
   );
 }
