@@ -9,7 +9,7 @@ const useStyles = makeStyles(() => {
   };
 });
 
-function App(props: any) {
+function App() {
   const classes = useStyles();
 
   return (
