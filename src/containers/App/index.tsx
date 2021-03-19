@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import { Button, IconButton, makeStyles, TextField } from '@material-ui/core';
 
 import CasinoIcon from '@material-ui/icons/Casino';
@@ -11,8 +12,10 @@ const useStyles = makeStyles(() => {
   };
 });
 
-function App() {
+function App(): JSX.Element {
   const classes = useStyles();
+
+  const [games, setGames] = useState([{ csgo: 'csgo' }]);
 
   return (
     <div className={classes.container}>
