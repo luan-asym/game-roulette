@@ -17,6 +17,10 @@ function App(): JSX.Element {
 
   const [games, setGames] = useState([{ csgo: 'csgo' }]);
 
+  const onPickClicked = () => {
+    console.log('clicked');
+  };
+
   return (
     <div className={classes.container}>
       <TextField id="gameName" label="Game" variant="outlined" />
@@ -26,7 +30,13 @@ function App(): JSX.Element {
 
       <br />
       <br />
-      <Button variant="contained" startIcon={<CasinoIcon />} endIcon={<CasinoIcon />} size="large">
+      <Button
+        variant="contained"
+        startIcon={<CasinoIcon />}
+        endIcon={<CasinoIcon />}
+        size="large"
+        onClick={onPickClicked}
+      >
         Pick for me!
       </Button>
     </div>

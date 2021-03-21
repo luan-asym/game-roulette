@@ -1,6 +1,10 @@
 {
-  "name": "Game Roulette",
+  "name": "gpame-roulette",
   "version": "0.1.0",
+  "author": {
+    "name": "luan",
+    "email": "ltran@asymmetrik.com"
+  },
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.11.3",
