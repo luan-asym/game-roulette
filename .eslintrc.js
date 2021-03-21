@@ -41,5 +41,7 @@ module.exports = {
 
     'no-console': 'warn', // we don't want to ship with console logs
     '@typescript-eslint/ban-ts-comment': 'off',
+
+    'prettier/prettier': ['error', { endOfLine: 'auto' }],
   },
 };
